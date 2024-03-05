@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "nodemon node.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
