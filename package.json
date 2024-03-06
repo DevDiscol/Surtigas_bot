@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "node index.js"
   },
   "dependencies": {
     "telegraf": "^4.16.3",
