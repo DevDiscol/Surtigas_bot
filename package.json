@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "pm2": "^5.3.1",
