@@ -2,7 +2,9 @@
 const { message } = require("telegraf/filters");
 const XLSX = require("xlsx");
 const http = require("http");
+require('dotenv').config();
 
+const token = process.env.TOKEN;
 const hostname = "0.0.0.0";
 
 const port = 3000; 
@@ -23,7 +25,7 @@ const sheet = workbookSheets[0];
 const dataExcel = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
 
 
-const bot = new Telegraf("7150347578:AAFylUyeWFDRCw6tPaMz3aYW6dvJ9n6MZgo");
+const bot = new Telegraf(`${token}`);
 
 
 bot.start((ctx) => {
